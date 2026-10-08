@@ -1,4 +1,13 @@
-"use strict";
-/* eslint-disable  @typescript-eslint/consistent-indexed-object-style,  @typescript-eslint/no-namespace */
-Object.defineProperty(exports, "__esModule", { value: true });
-//# sourceMappingURL=Config.js.map
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+    ],
+  },
+};
+
+module.exports = nextConfig;
