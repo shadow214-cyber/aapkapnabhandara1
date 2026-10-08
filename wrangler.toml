@@ -1,0 +1,14 @@
+name = "aapkapnabhandara1"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".vercel/output/static"
+
+# Cloudflare KV binding for menu data / JSON storage
+[[kv_namespaces]]
+binding = "BHANDARA_STORE"
+id = "YOUR_KV_NAMESPACE_ID"
+
+# Cloudflare R2 binding for photo uploads
+[[r2_buckets]]
+binding = "BHANDARA_BUCKET"
+bucket_name = "bhandara-photos"
